@@ -1,9 +1,10 @@
 import { useState } from "react";
 import FeatureBox from "./FeatureBox";
-import image1 from "../assets/images/icon-access-anywhere.svg"
-import image2 from "../assets/images/icon-security.svg"
-import image3 from "../assets/images/icon-collaboration.svg"
-import image4 from "../assets/images/icon-any-file.svg"
+import image1 from "../assets/images/icon-access-anywhere.svg";
+import image2 from "../assets/images/icon-security.svg";
+import image3 from "../assets/images/icon-collaboration.svg";
+import image4 from "../assets/images/icon-any-file.svg";
+
 function Features() {
   const [items, setItems] = useState([
     {
