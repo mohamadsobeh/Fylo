@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import logo from "../assets/images/logo.svg"
+import logo from "../assets/images/logo.svg";
+import iconLocation from "../assets/images/icon-location.svg";
+import iconPhone from "../assets/images/icon-phone.svg";
+import iconEmail from "../assets/images/icon-email.svg";
 
 function Footer() {
   const [contact, setContact] = useState([
-    { icon: "/src/assets/images/icon-phone.svg", text: "0959837527" },
-    { icon: "/src/assets/images/icon-email.svg", text: "example@fylo.com" },
+    { icon: iconPhone, text: "0959837527" },
+    { icon: iconEmail, text: "example@fylo.com" },
   ]);
 
   const [links, setLinks] = useState([
@@ -38,7 +41,7 @@ function Footer() {
         <div className="flex justify-between flex-wrap flex-col md:flex-row gap-[30px] mt-[30px]">
           <div className="flex items-start gap-[15px] w-[340px] max-w-full">
             <img
-              src="/src/assets/images/icon-location.svg"
+              src={iconLocation}
               alt="location-img"
               className="w-[18px] h-[18px] object-contain"
             />
@@ -67,7 +70,7 @@ function Footer() {
             {links.map((item) => (
               <li key={item}>
                 <Link
-                  to={`/${item.toLowerCase().replace(/\s+/g, "-")}`} 
+                  to={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
                   className="hover:text-primary transition-all duration-200 text-base"
                 >
                   {item}
