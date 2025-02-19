@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { Route, RouterProvider, createHashRouter, createRoutesFromElements } from "react-router-dom";
-import "./index.css"; // تأكد من استيراد ملف CSS لتأثيرات Tailwind و AOS
+import "./index.css"; 
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
 
-// استيراد مكتبة AOS
+
 import AOS from "aos";
-import "aos/dist/aos.css"; // استيراد الـ CSS الخاص بمكتبة AOS
+import "aos/dist/aos.css"
 
 function App() {
   useEffect(() => {
-    // تهيئة AOS
+    
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
@@ -19,7 +19,7 @@ function App() {
       offset: 100,
     });
 
-    // تحديث AOS بعد أي تغييرات
+    
     AOS.refresh();
   }, []);
 

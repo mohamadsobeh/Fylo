@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import landingImg from "../assets/images/landing-img.png";
+import bgCurvy from "../assets/images/bg-curvy-desktop.svg";
 
 function Landing() {
   return (
@@ -7,7 +9,7 @@ function Landing() {
         <div className="element-center flex-col pt-[180px] relative z-20">
           <div className="w-[700px] max-w-full">
             <img
-              src="/images/landing-img.png" 
+              src={landingImg}
               alt="landing-img"
               className="w-full h-auto object-contain"
             />
@@ -32,10 +34,7 @@ function Landing() {
         </div>
       </div>
       <div className="w-full h-[180px]">
-        <img
-          src="/images/bg-curvy-desktop.svg"
-          className="w-full h-full object-cover"
-        />
+        <img src={bgCurvy} className="w-full h-full object-cover" />
       </div>
     </section>
   );

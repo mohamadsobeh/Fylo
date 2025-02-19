@@ -4,22 +4,22 @@ import FeatureBox from "./FeatureBox";
 function Features() {
   const [items, setItems] = useState([
     {
-      icon: "/images/icon-access-anywhere.svg",
+      icon: "/src/assets/images/icon-access-anywhere.svg",
       title: "Access your files, anywhere",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sed beatae, laboriosam enim voluptatum quia.",
     },
     {
-      icon: "/images/icon-security.svg",
+      icon: "/src/assets/images/icon-security.svg",
       title: "Security you can trust",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sed beatae, laboriosam enim voluptatum quia.",
     },
     {
-      icon: "/images/icon-collaboration.svg",
+      icon: "/src/assets/images/icon-collaboration.svg",
       title: "Real-time collaboration",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sed beatae, laboriosam enim voluptatum quia.",
     },
     {
-      icon: "/images/icon-any-file.svg",
+      icon: "/src/assets/images/icon-any-file.svg",
       title: "Store any type of file",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sed beatae, laboriosam enim voluptatum quia.",
     },
