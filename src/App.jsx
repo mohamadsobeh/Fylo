@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import { Route, RouterProvider, createHashRouter, createRoutesFromElements } from "react-router-dom";
 import "./index.css"; // تأكد من استيراد ملف CSS لتأثيرات Tailwind و AOS
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -23,7 +23,7 @@ function App() {
     AOS.refresh();
   }, []);
 
-  const router = createBrowserRouter(
+  const router = createHashRouter(
     createRoutesFromElements(
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />

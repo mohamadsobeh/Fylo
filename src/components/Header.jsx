@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+
 function Header() {
   const [links, setLinks] = useState(["Features", "Team", "Signin"]);
   const headerRef = useRef();
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
@@ -14,6 +16,7 @@ function Header() {
       }
     });
   }, []);
+
   return (
     <header
       ref={headerRef}
@@ -22,9 +25,9 @@ function Header() {
       <div className="container flex justify-between items-center gap-6 sm:gap-0 flex-col sm:flex-row">
         <Link to="/">
           <img
-            src="/src/assets/images/logo.svg"
+            src="/images/logo.svg" 
             alt="logo-img"
-            className="w-[160px]  h-auto object-contain"
+            className="w-[160px] h-auto object-contain"
           />
         </Link>
         <nav>

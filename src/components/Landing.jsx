@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import LandingImg from "/src/assets/images/landing-img.png";
 
 function Landing() {
   return (
@@ -8,7 +7,7 @@ function Landing() {
         <div className="element-center flex-col pt-[180px] relative z-20">
           <div className="w-[700px] max-w-full">
             <img
-              src={LandingImg}
+              src="/images/landing-img.png" 
               alt="landing-img"
               className="w-full h-auto object-contain"
             />
@@ -20,7 +19,8 @@ function Landing() {
               accessible anywhere.
             </h1>
             <p className="text-white font-light text-lg px-4 md:w-[600px] md:mx-auto">
-              Securely store and access your important files anytime, anywhere. Experience seamless collaboration and easy file management.
+              Securely store and access your important files anytime, anywhere.
+              Experience seamless collaboration and easy file management.
             </p>
           </div>
           <Link
@@ -33,7 +33,7 @@ function Landing() {
       </div>
       <div className="w-full h-[180px]">
         <img
-          src="/src/assets/images/bg-curvy-desktop.svg"
+          src="/images/bg-curvy-desktop.svg"
           className="w-full h-full object-cover"
         />
       </div>
